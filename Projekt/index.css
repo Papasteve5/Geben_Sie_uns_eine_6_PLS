@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "HyliaSerifBeta-Regular";
+    src: url("Fonts/Hylia\ Serif\ Beta\ v0-009/HyliaSerifBeta-Regular.otf");
+}
+
+p {
+    font-family: fot-rodin-pron, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.title {
+    font-family: "HyliaSerifBeta-Regular";
+    color: #ba9f66;
+    font-style: normal;
+    font-size: 69px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.description {
+    display: inline-block;
+    margin-left: 25%;
+    text-align: center;
+}
+
+
+
+.BOTW_pic {
+    width: 720px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.liste {
+    font-family: "HyliaSerifBeta-Regular";
+    font-size: 20px;
+}
