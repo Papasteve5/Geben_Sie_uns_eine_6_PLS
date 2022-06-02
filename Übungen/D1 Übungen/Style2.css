@@ -1,0 +1,19 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    background-color: #0F99D9;
+}
+
+div {
+    background-color: #23AFF0;
+    width: 88em;
+    height: 20em;
+    border: 5em solid #10A7ED;
+    padding: 10em;
+    margin: 20px;
+}
+
+p {
+    background-color: #38B6F1;
+    height: 20em;
+}
