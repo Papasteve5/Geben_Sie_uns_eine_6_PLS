@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "HyliaSerifBeta-Regular";
+    src: url("Fonts/Hylia\ Serif\ Beta\ v0-009/HyliaSerifBeta-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #2699FB;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "HyliaSerifBeta-Regular";
+    color: #ba9f66;
+    margin: 100px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p {
+    font-family: fot-rodin-pron, sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+a {
+    font-family: fot-rodin-pron, sans-serif;
+    color: #F5CC00;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+li {
+    font-family: fot-rodin-pron, sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+ul {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 1em;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer p {
+    margin-bottom: 0%;
+}
+
+.BOTW_pic {
+    width: 720px;
+    height: 360px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.Logo {
+    width: 50px;
+    padding: 10px 0px;
+}
+
+.UpperHalf {
+    background-image: url(Images/ZeldaBOTW_wallpaper.PNG);
+}
+
+.lowerHalf {
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 1fr 5%;
+    grid-template-columns: auto;
+}
+
+.Items,
+.ItemsC {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.ItemsC {
+    height: 100vh;
+}
+
+.Item {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    border: medium solid black;
+    margin: 1em;
+}
+
+.Item img {
+    width: 100%;
+}
+
+.ItemTitel {
+    margin: 1em;
+}
+
+.ItemDesc {
+    font-size: small;
+    margin: 0.5em;
+}
+
+.ItemCatagory {
+    margin: 0.5em;
+}
