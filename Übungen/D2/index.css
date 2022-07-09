@@ -1,0 +1,27 @@
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #2196F3; */
+    /* grid-template-columns: auto auto auto; /* 3 Spalten */
+}
+
+.grid-item {
+    background-color: rgba(101, 191, 150, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    line-height: 75px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
