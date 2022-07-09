@@ -1,0 +1,180 @@
+ /* root stuff */
+ 
+ :root {
+     --white: #003566;
+     --blue: #001D3D;
+ }
+ 
+ @font-face {
+     font-family: "HyliaSerifBeta-Regular";
+     src: url("Fonts/Hylia\ Serif\ Beta\ v0-009/HyliaSerifBeta-Regular.otf");
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ /* Html Elemetnes*/
+ 
+ body {
+     display: grid;
+     grid-template-columns: 10% auto;
+     grid-template-rows: auto;
+     width: 100%;
+     height: 100vh;
+     background-color: var(--blue);
+ }
+ 
+ main {
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 50% 50%;
+     margin: 0;
+     text-align: center;
+ }
+ 
+ main p,
+ label {
+     color: white;
+ }
+ 
+ aside {
+     background-color: var(--white);
+     padding: 1em;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: "HyliaSerifBeta-Regular";
+     color: #ba9f66;
+     margin: 100px;
+ }
+ 
+ h1 {
+     font-size: 70px;
+ }
+ 
+ p {
+     font-family: fot-rodin-pron, sans-serif;
+     font-size: 16px;
+     margin-bottom: 30px;
+ }
+ 
+ a {
+     font-family: fot-rodin-pron, sans-serif;
+     color: #F5CC00;
+     font-size: 20px;
+     margin-bottom: 30px;
+ }
+ 
+ li {
+     font-family: fot-rodin-pron, sans-serif;
+     font-size: 16px;
+     line-height: 200%;
+ }
+ 
+ ul {
+     margin-bottom: 30px;
+ }
+ 
+ footer {
+     padding: 1em;
+     display: grid;
+     grid-column-start: 1;
+     grid-column-end: 4;
+ }
+ 
+ footer p {
+     margin-bottom: 0%;
+     font-family: fot-rodin-pron, sans-serif;
+     color: #F5CC00;
+ }
+ /* Index & Copedium Classes*/
+ 
+ .Logo {
+     width: 50px;
+     padding: 10px 0px;
+ }
+ 
+ .UpperHalf {
+     background-image: url(Images/Background.jpg);
+ }
+ 
+ .lowerHalf {
+     display: grid;
+     grid-template-rows: 1fr 5%;
+     grid-template-columns: auto;
+ }
+ 
+ .Items,
+ .ItemsC {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: auto;
+ }
+ 
+ .ItemsC {
+     height: 100vh;
+ }
+ 
+ .Item {
+     display: grid;
+     grid-template-rows: auto;
+     grid-template-columns: 50% 50%;
+     border: medium solid black;
+     margin: 1em;
+     padding: 0;
+     background-color: var(--white);
+ }
+ 
+ .ItemTitel {
+     margin: 1em;
+ }
+ 
+ .Item img {
+     width: 100%;
+ }
+ 
+ .ItemDesc {
+     font-size: small;
+     margin: 0.5em;
+     color: White;
+ }
+ 
+ .ItemCatagory {
+     margin: 0.5em;
+     color: White;
+ }
+ /* Login Classes*/
+ 
+ .ContainerloginForm {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-column-start: 2;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 2;
+ }
+ 
+ .loginForm {
+     justify-self: center;
+     text-align: start;
+     padding: 1em;
+     background-color: var(--white);
+     border: medium solid black;
+ }
+ 
+ .loginForm h2 {
+     margin: 1em;
+ }
+ 
+ .mainClass {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 33% 1fr;
+     height: 100vh;
+ }
