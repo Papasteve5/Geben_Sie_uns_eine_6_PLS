@@ -1,20 +1,20 @@
 
-html{
-    font-size: 100%;
-    width: 100%;
-}
 
 h1 {
     text-align: center;
-    font-size: 3.0rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.0rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 1.0rem;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
 }
 
 .grid-container {
@@ -26,26 +26,19 @@ p {
     background-color: rgba(101, 191, 150, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     text-align: center;
+    width: 75rem;
+    margin: 0.25rem;
 }
-
-img {
-    width: 20rem;
-    height: auto;
-}
-
 
 @media (min-width: 600px) {
     h1 { font-size: 4rem; }
     h2 { font-size: 3rem; }
     p { font-size: 2rem; }
+    img { font-size: 2rem; }
     .grid-item {
-        width: 32rem;
-        margin: 10px;
-        line-height: 75px;
-    }
-    img {
-        width: 10rem;
-        height: auto;
+        text-align: center;
+        width: 80rem;
+        margin: 0.3rem;
     }
 }
 
@@ -53,14 +46,11 @@ img {
     h1 { font-size: 5rem; }
     h2 { font-size: 4rem; }
     p { font-size: 3rem; }
+    img { font-size: 3rem; }
     .grid-item {
-        width: 34rem;
-        margin: 10px;
-        line-height: 75px;
-    }
-    img {
-        width: 20rem;
-        height: auto;
+        text-align: center;
+        width: 85rem;
+        margin: 0.35rem;
     }
 }
 
@@ -68,10 +58,11 @@ img {
     h1 { font-size: 6rem; }
     h2 { font-size: 5rem; }
     p { font-size: 4rem; }
+    img { font-size: 4rem; }
     .grid-item {
-        width: 36rem;
-        margin: 10px;
-        line-height: 75px;
+        text-align: center;
+        width: 90rem;
+        margin: 0.4rem;
     }
 }
 
@@ -79,10 +70,11 @@ img {
     h1 { font-size: 7rem; }
     h2 { font-size: 6rem; }
     p { font-size: 5rem; }
+    img { font-size: 5rem; }
     .grid-item {
-        width: 38rem;
-        margin: 10px;
-        line-height: 75px;
+        text-align: center;
+        width: 95rem;
+        margin: 0.45rem;
     }
 }
 
@@ -90,9 +82,10 @@ img {
     h1 { font-size: 8rem; }
     h2 { font-size: 7rem; }
     p { font-size: 6rem; }
+    img { font-size: 6rem; }
     .grid-item {
-        width: 40rem;
-        margin: 10px;
-        line-height: 75px;
+        text-align: center;
+        width: 100rem;
+        margin: 0.5rem;
     }
 }
