@@ -1,8 +1,9 @@
  /* root stuff */
  
  :root {
-     --white: #003566;
+     --LightBlue: #003566;
      --blue: #001D3D;
+     --gold: #F5CC00;
  }
  
  @font-face {
@@ -40,7 +41,7 @@
  
  aside {
      display: block;
-     background-color: var(--white);
+     background-color: var(--LightBlue);
      padding: 1em;
  }
  
@@ -110,20 +111,22 @@
      height: 100vh;
  }
  
- .Item {
+ .Item,
+ .ItemOutside {
      display: grid;
      grid-template-rows: auto;
      grid-template-columns: 50% 50%;
      border: medium solid black;
      margin: 1em;
-     background-color: var(--white);
+     background-color: var(--LightBlue);
  }
  
  .ItemTitel {
      margin: 1em;
  }
  
- .Item img {
+ .Item img,
+ .ItemOutside img {
      width: 100%;
  }
  
@@ -152,7 +155,7 @@
      justify-self: center;
      text-align: start;
      padding: 1em;
-     background-color: var(--white);
+     background-color: var(--LightBlue);
      border: medium solid black;
  }
  
@@ -183,7 +186,6 @@
  
  #main-menu {
      display: block;
-     z-index: 9;
  }
  
  #main-menu ul {
@@ -204,7 +206,7 @@
  }
  
  #main-menu a {
-     color: #B9FAF8;
+     color: #F5CC00;
      font-size: 1.5rem;
      text-decoration: none;
  }
@@ -228,7 +230,7 @@
      padding: 0px;
      margin: 0px;
      font-family: 'Cabin', Sans-serif;
-     background: linear-gradient( to bottom, #3D0E61, #3D0E61 20%, white 20%, white 40%, #3D0E61 40%, #3D0E61 60%, white 60%, white 80%, #3D0E61 80%, #3D0E61 100%);
+     background-image: url(Images/hamburger-menu-svgrepo-com.svg);
  }
  
  #hamburger-menu #sidebar-menu {
@@ -238,14 +240,14 @@
      left: -250px;
      width: 200px;
      height: 100%;
-     background-color: #3D0E61;
+     background-color: var(--LightBlue);
      transition: 0.3s;
      padding: 0px 10px;
      box-sizing: border-box;
  }
  
  #hamburger-menu h3 {
-     color: #B9FAF8;
+     color: #F5CC00;
      font-size: 2.2rem;
  }
  
@@ -259,7 +261,7 @@
  }
  
  #hamburger-menu a {
-     color: #B9FAF8;
+     color: #F5CC00;
      font-size: 1.3rem;
      text-decoration: none;
  }
@@ -278,11 +280,24 @@
      opacity: 0.4;
  }
  
- @media screen and (max-width: 750px) {
+ .outside {
+     display: block;
+ }
+ 
+ @media screen and (max-width: 400px) {
+     h1 {
+         font-size: 3em;
+     }
      #main-menu {
          display: none;
      }
      #hamburger-menu {
          display: inline;
+     }
+     .ItemOutside {
+         display: none;
+     }
+     .Item {
+         grid-column-start: span 3;
      }
  }
